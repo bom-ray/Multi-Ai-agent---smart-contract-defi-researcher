@@ -1,0 +1,21 @@
+{
+  "name": "defi-multi-ai-agent",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node multi_ai_agent.js",
+    "research:index": "node index_research.js",
+    "research:force": "node index_research.js --force",
+    "doctor": "node doctor.js",
+    "economic:analyze": "node economic_analysis.js",
+    "economic:test": "npm --prefix workspace test",
+    "economic:full": "node economic_analysis.js",
+    "single-agent": "node ai_agent.js",
+    "multi-agent": "node multi_ai_agent.js"
+  },
+  "dependencies": {
+    "chromadb": "3.5.0",
+    "pdfjs-dist": "6.3.289"
+  }
+}
